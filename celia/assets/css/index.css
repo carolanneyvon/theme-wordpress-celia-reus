@@ -1,0 +1,826 @@
+/* ---------------- */
+/*     SECTION     */
+/* --------------- */
+
+.home_titre {
+  width: 100%;
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  flex-direction: column;
+  background-size: cover;
+  background-image: url("/wp-content/themes/celia/assets/img/bg_accueil.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background-attachment: fixed; */
+}
+
+.home_prochainement {
+  width: 100%;
+  display: flex;
+  /* min-height: 100vh; */
+  /* height: 1361px; */
+  height: 1021px;
+  background-color: transparent;
+  background-image: url("/wp-content/themes/celia/assets/img/bg-parchemin2.jpeg");
+  background-repeat: no-repeat;
+  /* background-position: center; */
+}
+
+.home_parution {
+  width: 100%;
+  height: 1188px;
+  display: flex;
+  min-height: 100vh;
+  background-color: var(--cr-blanchatre);
+  background-repeat: no-repeat;
+  background-position: center;
+  justify-content: center;
+}
+
+.home_rencontre {
+  width: 100%;
+  display: flex;
+  min-height: 100vh;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: center;
+  justify-content: center;
+  min-height: 888px;
+}
+
+/* ---------------- */
+/*     TITRE     */
+/* --------------- */
+
+.home_titre_container {
+  margin-top: 8%;
+  margin-left: 3%;
+  margin-bottom: 60px;
+  /* text-align: left; */
+  width: 100vw;
+}
+
+.home_titre_container .home_titre_h1 {
+  font-family: "Cinzel Decorative";
+  font-size: 64px;
+  line-height: 100px;
+  position: relative;
+  font-weight: 600;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  /* text-transform: uppercase; */
+}
+
+.home_titre_container .home_titre_h1::first-letter {
+  font-size: 122px;
+  color: var(--cr-orange);
+  text-transform: uppercase;
+  margin-right: -30px;
+  font-size: 1.9em;
+  padding: 0 30px;
+  border: 1px solid var(--cr-orange);
+}
+
+.home_titre_container .home_titre_sub_h1 {
+  margin-top: 20px;
+  position: relative;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-bottom: 3px dotted var(--cr-orange);
+  letter-spacing: 4px;
+}
+
+.home_titre_texte {
+  font-size: 20px;
+  height: 148px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 22vw;
+  margin-left: 3%;
+}
+
+.home_titre_bouton {
+  position: absolute;
+  left: 45%;
+  top: 80%;
+  right: 45%;
+}
+
+.home_titre_btn {
+  font-family: "Cinzel Decorative";
+  margin: 15px 10px 0 0;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-align: center;
+  background: var(--cr-orange);
+  transition: 0.1s;
+  border: 1px solid var(--cr-orange);
+  padding: 15px 35px;
+  border-radius: 10px;
+  width: 247px;
+  height: 57px;
+}
+
+.home_titre_btn::first-letter {
+  text-transform: uppercase;
+}
+
+.home_titre_btn:hover {
+  color: #000;
+  background: #fff;
+  border: 1px solid #000;
+}
+
+/* ---------------------- */
+/*     PROCHAINEMENT     */
+/* --------------------- */
+
+.home_up_container {
+  display: flex;
+  height: 70%;
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: center;
+  align-items: center;
+}
+.home_up_livre {
+  z-index: 2;
+  height: 790px;
+}
+.home_up_livre_img {
+  /* width: 500px; */
+  /* height: 790px; */
+  width: 30vw;
+  height: 82vh;
+  object-fit: contain;
+  box-shadow: 10px 10px 8px 0px rgba(51, 51, 51, 0.25);
+  -webkit-box-shadow: 10px 10px 8px 0px rgba(51, 51, 51, 0.25);
+  -moz-box-shadow: 10px 10px 8px 0px rgba(51, 51, 51, 0.25);
+}
+
+.home_up_livre_text {
+  position: relative;
+  display: inline-block;
+  /* width: 784px;
+  height: 601px; */
+  width: 41vw;
+  height: 601px;
+  padding: 25px 80px 25px;
+  background-color: var(--cr-blanchatre);
+  margin: 0 0 0 -3%;
+  vertical-align: middle;
+}
+
+/* .home_up_livre_text_container {
+  height: 601px;
+} */
+
+.home_up_livre_surtitre,
+.home_up_livre_subtitre,
+.home_up_livre_type {
+  color: var(--cr-orange);
+}
+
+.home_up_livre_surtitre {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.home_up_livre_titre {
+  font-size: 45px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding-top: 5%;
+}
+
+.home_up_livre_surtitre,
+.home_up_livre_titre,
+.home_up_livre_date {
+  font-family: "Gentium Basic";
+}
+
+.home_up_livre_subtitre {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.home_up_livre_desc {
+  font-size: 16px;
+  padding-top: 10%;
+}
+
+.home_up_livre_date {
+  font-size: 76px;
+  text-transform: uppercase;
+  padding-top: 5%;
+}
+
+.home_up_livre_type {
+  font-size: 20px;
+}
+
+.home_up_livre_surtitre,
+.home_up_livre_titre,
+.home_up_livre_subtitre,
+.home_up_livre_desc,
+.home_up_livre_date,
+.home_up_livre_type {
+  text-align: center;
+}
+
+/* ----------------- */
+/*     PARUTION     */
+/* ---------------- */
+
+.home_par_container {
+  padding-left: 25px;
+  padding-right: 25px;
+  width: 1370px;
+}
+
+.home_par_titre {
+  font-size: 46px;
+  font-weight: bold;
+  font-family: "Cinzel Decorative";
+  text-align: center;
+  margin: 3% 0 6% 0;
+}
+
+.home_par_titre::first-letter {
+  font-size: 122px;
+  color: var(--cr-orange);
+  text-transform: uppercase;
+  margin-right: -30px;
+  font-size: 1.9em;
+  padding: 0 30px;
+  border: 1px solid var(--cr-orange);
+}
+
+.home_par_books_panel {
+  position: relative;
+}
+
+.home_par_books_panel_container {
+  float: left;
+  width: 60%;
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.home_par_books_panel_info {
+  float: left;
+  width: 40%;
+  padding-left: 100px;
+}
+
+.home_par_books_panel_info_inner {
+  margin-top: 40px;
+}
+
+.home_par_books_panel_info_inner_titre {
+  font-size: 40px;
+  font-weight: bold;
+  font-family: "Cinzel Decorative";
+}
+
+.home_par_books_panel_info_inner_titre_link {
+  color: #000;
+}
+
+.home_par_books_panel_info_inner_category {
+  width: 100%;
+  height: 25px;
+  display: flex;
+}
+
+.home_par_books_panel_info_inner_category_dash {
+  position: absolute;
+  content: "";
+  top: 12.5%;
+  right: 88%;
+  height: 4px;
+  width: 40px;
+  margin-right: 10px;
+  background-color: #000;
+}
+
+.home_par_books_panel_info_inner_category_link {
+  margin-left: 50px;
+}
+
+.home_par_books_panel_info_inner_category_link a {
+  color: var(--cr-orange);
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.home_par_books_panel_info_inner_description {
+  padding-top: 25%;
+}
+
+.home_par_books_panel_info_inner_description_btn {
+  display: flex;
+  padding-top: 25%;
+}
+
+.btn_voir_livre {
+  font-family: "Cinzel Decorative";
+  margin: 0px 30px 0 0;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-align: center;
+  background: var(--cr-orange);
+  transition: 0.1s;
+  border: 1px solid var(--cr-orange);
+  padding: 0px 20px;
+  border-radius: 10px;
+  width: 187px;
+  height: 59px;
+}
+
+.btn_voir_livre::first-letter {
+  text-transform: uppercase;
+}
+
+.btn_voir_livre:hover {
+  color: var(--cr-orange);
+  background: #fff;
+  border: 1px solid var(--cr-orange);
+}
+
+.btn_voir_saga {
+  font-family: "Cinzel Decorative";
+  margin: 0px 0px 0 0;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  color: var(--cr-orange);
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-align: center;
+  background: #fff;
+  transition: 0.1s;
+  border: 1px solid var(--cr-orange);
+  padding: 0px 20px;
+  border-radius: 10px;
+  width: 187px;
+  height: 59px;
+}
+
+.btn_voir_saga::first-letter {
+  text-transform: uppercase;
+}
+
+.btn_voir_saga:hover {
+  color: #fff;
+  background: var(--cr-orange);
+  border: 1px solid var(--cr-orange);
+}
+
+.home_par_panel_item {
+  position: relative;
+  width: 33.3333%;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.home_par_panel_item_thumb_book {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+  outline: 1px solid transparent;
+  -ms-interpolation-mode: bicubic;
+  -webkit-filter: none;
+  filter: none;
+  -webkit-filter: blur(0px);
+  filter: blur(0px);
+  -moz-filter: blur(0px);
+  -ms-filter: blur(0px);
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='0');
+  vertical-align: middle;
+}
+
+.home_par_books_panel .home_par_panel_item_wrap {
+  display: block;
+  margin-bottom: 10px;
+  perspective: 600px;
+}
+.home_par_books_panel
+  .home_par_panel_item_wrap:hover
+  .home_par_panel_item_img_wrap,
+.home_par_books_panel
+  .home_par_panel_item_wrap.selected
+  .home_par_panel_item_img_wrap {
+  transform: rotateY(-45deg);
+}
+
+.home_par_panel_item_img_wrap {
+  transition: 0.3s ease-out;
+  position: relative;
+  margin-bottom: 30px;
+}
+.home_par_panel_item_thumb_titre {
+  color: #000;
+  font-family: "Cinzel Decorative";
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 50px;
+}
+
+.book_tips {
+  transform-origin: 35% 50%;
+  transform-style: preserve-3d;
+}
+.book_tips:after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 98.5%;
+  bottom: 3px;
+  width: 45px;
+  background: repeating-linear-gradient(
+    to right,
+    #f5f5f5,
+    #f5f5f5 5px,
+    #aaa 5px,
+    #aaa 6px
+  );
+  transform-origin: 0% 50%;
+  transform: rotateY(90deg);
+}
+
+.home_par_books_panel .home_par_books_panel_info {
+  float: left;
+  width: 40%;
+  padding-left: 100px;
+}
+.home_par_books_panel .home_par_books_panel_info_inner {
+  transition: 0.4s;
+  transform: translateY(40px);
+  opacity: 0;
+  visibility: hidden;
+  display: none;
+}
+.home_par_books_panel_info .home_par_books_panel_info_inner.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.show {
+  display: block !important;
+}
+
+/* ------------------ */
+/*     RENCONTRE     */
+/* ----------------- */
+
+.home_ren_container {
+  padding-left: 25px;
+  padding-right: 25px;
+  height: 700px;
+}
+
+.home_ren_titre {
+  font-size: 46px;
+  font-weight: bold;
+  font-family: "Cinzel Decorative";
+  text-align: center;
+  margin: 3% 0 6% 0;
+}
+
+.home_ren_titre::first-letter {
+  font-size: 122px;
+  color: var(--cr-orange);
+  text-transform: uppercase;
+  margin-right: -30px;
+  font-size: 1.9em;
+  padding: 0 30px;
+  border: 1px solid var(--cr-orange);
+}
+
+.home_ren_panel_container {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  /* width: 1190px; */
+  width: 78vw;
+}
+
+.home_ren_panel_date {
+  background-color: white;
+  /* width: 625px; */
+  width: 53%;
+  /* height: 318px; */
+  height: 100%;
+  border: 1px solid var(--cr-orange);
+  box-shadow: 12px 12px 0px 0px rgba(204, 112, 0, 0.98);
+  -webkit-box-shadow: 12px 12px 0px 0px rgba(204, 112, 0, 0.98);
+  -moz-box-shadow: 12px 12px 0px 0px rgba(204, 112, 0, 0.98);
+}
+
+.home_ren_panel_author {
+  height: 417px;
+  width: 23%;
+}
+
+.home_ren_panel_author_img {
+  height: auto;
+  width: 100%;
+  border: 1px solid var(--cr-orange);
+  object-fit: contain;
+}
+
+.home_ren_panel_date_time {
+  font-size: 54px;
+  font-weight: bold;
+  font-family: "Cinzel Decorative";
+  padding: 7% 0 0 10%;
+}
+
+.home_ren_panel_date_map {
+  font-size: 40px;
+  font-weight: bold;
+  font-family: "Cinzel Decorative";
+  padding: 5% 0 0 50%;
+  text-decoration: underline var(--cr-orange);
+  text-underline-offset: 10px;
+}
+
+.home_ren_panel_date_city {
+  font-size: 35px;
+  font-weight: bold;
+  font-family: "Gentium Basic";
+  padding-top: 5%;
+  padding-right: 0;
+  padding-bottom: 5%;
+  padding-left: 65%;
+}
+
+/* .home_ren_panel_date_city:before {
+  position: absolute;
+  content: "";
+  left: 28%;
+  height: 4px;
+  width: 95px;
+  background-color: var(--cr-orange);
+  top: 355%;
+} */
+
+.home_ren_btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.btn_rencontre {
+  font-family: "Cinzel Decorative";
+  margin: 0px 0px 0 0;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-align: center;
+  background: #fff;
+  transition: 0.1s;
+  border: 1px solid var(--cr-orange);
+  padding: 13px 20px;
+  border-radius: 10px;
+  width: 200px;
+  height: 59px;
+}
+
+.btn_rencontre::first-letter {
+  text-transform: uppercase;
+}
+
+.btn_rencontre:hover {
+  color: #fff;
+  background: var(--cr-orange);
+  border: 1px solid var(--cr-orange);
+}
+
+/* SWIPERJS */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* background: #fff; */
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-boutton-next {
+  position: absolute;
+  top: 50%;
+  right: 3%;
+  width: 40px;
+  height: 40px;
+  background: url("/wp-content/themes/celia/assets/img/btn-next.png") center
+    no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.swiper-boutton-prev {
+  position: absolute;
+  top: 50%;
+  left: 3%;
+  width: 40px;
+  height: 40px;
+  background: url("/wp-content/themes/celia/assets/img/btn-prev.png") center
+    no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.home_par_books_panel_info_inner_category_dash {
+  display: none;
+}
+
+.home_par_books_panel_info_inner_category_link {
+  margin-left: 50px;
+}
+
+.home_par_books_panel_info_inner_category_link::before {
+  position: absolute;
+  content: "";
+  top: 12.5%;
+  right: 86%;
+  height: 4px;
+  width: 40px;
+  margin-right: 20px;
+  margin-top: -1px;
+  background-color: #000;
+}
+/* ---------- */
+/* RESPONSIVE */
+/* ----------  */
+
+/* @media screen and (max-width: 1920px) {
+  .home_ren_panel_date_city:before {
+    left: 33%;
+  }
+} */
+
+@media screen and (max-width: 1750px) {
+  /* .home_ren_panel_date_city:before {
+    left: 30%;
+  } */
+
+  .home_titre_container {
+    margin-top: 10%;
+  }
+
+  .home_up_livre_titre {
+    font-size: 35px;
+  }
+
+  .home_up_livre_date {
+    font-size: 70px;
+  }
+
+  .home_up_livre {
+    z-index: 2;
+    height: 500px;
+    height: 77vh;
+  }
+}
+
+@media screen and (max-width: 1550px) {
+  .home_titre_container {
+    margin-top: 7%;
+  }
+  .home_titre_container .home_titre_h1 {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 1530px) {
+  .home_titre_container {
+    margin-top: 10%;
+  }
+  .home_titre_container .home_titre_h1 {
+    font-size: 55px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  /* .home_ren_panel_date_city:before {
+    left: 30%;
+  } */
+  .home_up_livre_titre {
+    font-size: 30px;
+  }
+
+  .home_up_livre_date {
+    font-size: 55px;
+  }
+
+  .home_up_livre_type {
+    font-size: 18px;
+  }
+
+  .swiper-boutton-next {
+    right: 1%;
+  }
+
+  .swiper-boutton-prev {
+    left: 1%;
+  }
+  /* .home_titre_texte {
+    width: 80vw;
+    margin-left: 10%;
+    text-align: center;
+  }*/
+
+  .home_titre_container {
+    margin-top: 11%;
+  }
+
+  .home_titre_container .home_titre_h1 {
+    font-size: 52px;
+  }
+
+  .home_par_books_panel_info_inner_titre {
+    font-size: 30px;
+  }
+
+  .home_par_books_panel .home_par_books_panel_info {
+    padding-left: 45px;
+  }
+  .home_par_books_panel_info_inner_category_link::before {
+    top: 10.15%;
+    right: 86%;
+    margin-right: 4%;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .home_titre_container {
+    margin-top: 12%;
+  }
+
+  .home_titre_texte {
+    margin-top: 2%;
+  }
+
+  .home_titre_container .home_titre_h1 {
+    font-size: 44px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .home_titre_container {
+    margin-top: 32%;
+  }
+}

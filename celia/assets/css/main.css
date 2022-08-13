@@ -1,0 +1,32 @@
+.menu {
+  position: fixed;
+  top: 0px;
+}
+
+.admin-bar .menu {
+  top: 100px;
+} /* on prend en compte le décalage */
+
+.meme_saga {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  margin: 0 -20px;
+}
+
+.meme_saga__post {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.meme_saga__post a {
+  text-decoration: none;
+}
+
+.meme_saga__post h3 {
+  margin: 0.5em 0 1em;
+}
+
+.meme_saga__post + .meme_saga__post {
+  border-left: 1px solid #ebebeb;
+}
